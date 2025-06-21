@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className="h-screen bg-[#f8ffeb]">
+    <div className="min-h-screen bg-[#f8ffeb]">
       <header className=" flex justify-center  w-full p-4 bg-[#f8ffeb]">
         <Link to={"/"}>
         <img className="flex items-center cursor-pointer " src={kiwiLogo} alt="logo" />

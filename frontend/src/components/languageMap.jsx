@@ -6,7 +6,7 @@ const LanguageMap = () => {
   const languages = t("languages", { returnObjects: true });
 
   const handleLanguageSelect = (index) => {
-    // Mapping each index to i18next language codes
+    
     const languageCodes = ['en', 'fr', 'it', 'de', 'nl', 'pl', 'bg', 'ru', 'es'];
     i18n.changeLanguage(languageCodes[index]);
   };

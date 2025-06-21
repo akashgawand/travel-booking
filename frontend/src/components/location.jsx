@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { setSelectedLocation } from '../slice/locationSlice';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom'; // ✅ Use this instead of <Link>
+import { useNavigate } from 'react-router-dom';
 
 const LocationMap = () => {
   const dispatch = useDispatch();
@@ -10,8 +10,8 @@ const LocationMap = () => {
   const locations = t('locations', { returnObjects: true });
 
   const handleSelectedLocation = (location) => {
-    dispatch(setSelectedLocation(location)); // ✅ Save to Redux
-    navigate('/booking'); // ✅ Navigate after dispatch
+    dispatch(setSelectedLocation(location)); 
+    navigate('/booking'); 
   };
 
   return (
