@@ -80,7 +80,7 @@ const BookingForm = () => {
 
 
         try {
-            const res = await axios.post(`http://localhost:1000/description/${data.location}/form`, payload);
+            const res = await axios.post(`https://travelsite-backend-y6kz.onrender.com/description/${data.location}/form`, payload);
             const responceData = res.data
             console.log("Form submitted:", responceData);
         } catch (error) {
